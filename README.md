@@ -5,7 +5,6 @@ This is a responsive e-commerce website for ZOYORCHID, a clothing brand. The web
 
 ## Project Structure
 ```
-web/
 ├── index.html              # Homepage with hero section and featured products
 ├── shop.html               # Shop page displaying all products
 ├── productDetails.html     # Individual product details page
@@ -13,13 +12,13 @@ web/
 ├── contact.html            # Contact page
 ├── style.css               # Complete styling for all pages
 ├── script.js               # JavaScript for mobile navigation menu
-├── img/                    # Image assets folder
-│   ├── LOGO.png           # Company logo
-│   ├── mainScreen.png     # Hero section background
-│   ├── banner.png         # Banner for about/contact pages
-│   ├── b14.png            # Newsletter section background
-│   └── products/          # Product images
-└
+└── img/                    # Image assets folder
+   ├── LOGO.png           # Company logo
+   ├── mainScreen.png     # Hero section background
+   ├── banner.png         # Banner for about/contact pages
+   ├── b14.png            # Newsletter section background
+   └── products/          # Product images
+
 ```
 
 ## Features Implemented
