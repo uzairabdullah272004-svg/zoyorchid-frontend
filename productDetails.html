@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+
+    <section id="header">
+        <a href="#"><img src="img/LOGO.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="activePage" href="shop.html">SHOP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li id="bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="tab">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="pro-details" class="section-p1">
+        <div class="single-product-img">
+            <img src="img/products/jacket.jpg" width="100%" id="main-img" alt="">
+
+            <div class="small-img-col">
+                <div class="small-img">
+                    <img src="img/products/jacket.jpg" width="100%" class="small" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="img/LOGO.png" width="100%" class="small" alt="">
+                </div>
+                <div class="small-img">
+                    <img src="img/products/jacket.jpg" width="100%" class="small" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="single-pro-detail">
+            <h5>Home/Jacket</h5>
+            <h4>JACKET</h4>
+            <h2>Rs.800</h2>
+            <select>
+                <option>Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button>Add to Cart</button>
+            <h4>Details</h4>
+            <span>...................................................................</span>
+        </div>
+    </section>
+
+    <section id="pages" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">➡</a>
+    </section>
+    <section id="new-comers" class="section-p1 section-m1">
+        <div class="update-text">
+            <h4>SIGN-UP for new comers</h4>
+            <p>Get updates through email</p>
+        </div>
+        <div class="signup-form">
+            <input type="text" placeholder="Enter your email address">
+            <button>SIGN UP</button>
+        </div>
+    </section>
+
+    <footer id="footer" class="section-p1">
+        <div class="col-for-logo">
+            <img src="img/LOGO.png" alt="">
+            <br>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>.................</p>
+            <p><strong>Phone:</strong>.................</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">✔Sign In</a>
+            <a href="#">✔View Cart</a>
+            <a href="#">✔My Wishlist</a>
+            <a href="#">✔Track My Order</a>
+        </div>
+    </footer>
+
+    <script>
+        var mainIMG = document.getElementById('main-img');
+        var smallIMG = document.getElementsByClassName('small');
+
+        for (var i = 0; smallIMG.length; i++) {
+            smallIMG[i].onclick = function () {
+                mainIMG.src = this.src;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
