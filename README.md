@@ -19,8 +19,7 @@ web/
 │   ├── banner.png         # Banner for about/contact pages
 │   ├── b14.png            # Newsletter section background
 │   └── products/          # Product images
-└── .vscode/
-    └── settings.json      # VS Code workspace settings
+└
 ```
 
 ## Features Implemented
